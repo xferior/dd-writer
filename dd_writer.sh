@@ -9,7 +9,7 @@ fi
 echo -e "\n.:/// DD WRITER ///:.\n"
 
 echo "[+] Enter the full path to the ISO or IMG file:"
-read -r FILE_PATH
+read -e -r FILE_PATH
 
 if [ ! -f "$FILE_PATH" ]; then
     echo "[!] The file does not exist. Exiting."
